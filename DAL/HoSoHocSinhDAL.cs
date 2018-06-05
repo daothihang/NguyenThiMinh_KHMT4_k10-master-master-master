@@ -131,5 +131,16 @@ namespace DAL
             return dt;
 
         }
+        public DataTable LayGT()
+        {
+            KetNoiCoSoDuLieu.MoKetNoi();
+            DataTable dt = new DataTable();
+            String sql = "SELECT DISTINCT GioiTinh FROM HoSoHocSinh ORDER BY GioiTinh ";
+            SqlDataAdapter da = new SqlDataAdapter(sql, KetNoiCoSoDuLieu.KetNoi);
+            da.Fill(dt);
+            KetNoiCoSoDuLieu.DongKetNoi();
+            return dt;
+
+        }
     }
 }

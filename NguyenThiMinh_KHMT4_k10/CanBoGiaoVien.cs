@@ -20,7 +20,9 @@ namespace NguyenThiMinh_KHMT4_k10
         CanBoGiaoVienBUL myCB = new CanBoGiaoVienBUL();
         private void CanBoGiaoVien_Load(object sender, EventArgs e)
         {
-         
+            cboLoaiTK.DataSource = myCB.LayLoaiTK();
+            cboLoaiTK.DisplayMember = "LoaiTaiKhoan";
+            cboLoaiTK.ValueMember = "LoaiTaiKhoan";
             dgvCBGV.DataSource = myCB.LayDsCanBo();
         }
 

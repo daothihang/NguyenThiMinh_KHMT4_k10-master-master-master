@@ -171,6 +171,7 @@
             // 
             // cboLoaiTK
             // 
+            this.cboLoaiTK.DisplayMember = "admin, GV";
             this.cboLoaiTK.FormattingEnabled = true;
             this.cboLoaiTK.Items.AddRange(new object[] {
             "admin",

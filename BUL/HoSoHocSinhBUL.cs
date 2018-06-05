@@ -39,5 +39,9 @@ namespace BUL
             DataTable dt = myHoSoHocSinhDAL.TimKiem(MaHocSinh);
             return dt;
         }
+        public DataTable LayGT()
+        {
+            return myHoSoHocSinhDAL.LayGT();
+        }
     }
 }

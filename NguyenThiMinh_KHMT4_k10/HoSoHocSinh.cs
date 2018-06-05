@@ -26,6 +26,9 @@ namespace NguyenThiMinh_KHMT4_k10
             cboMaLop.DataSource = lop.LayDsLop();
             cboMaLop.DisplayMember = "Tenlop";
             cboMaLop.ValueMember = "MaLop";
+            cboGT.DataSource = myHSHS.LayGT();
+            cboGT.DisplayMember = "GioiTinh";
+            cboGT.ValueMember = "GioiTinh";
             dgvHSHS.DataSource = myHSHS.LayDanhSachHoSoHocSinh();
         }
 
@@ -33,9 +36,7 @@ namespace NguyenThiMinh_KHMT4_k10
 
         private void cboGT_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cboGT.DataSource = myHSHS.LayDanhSachHoSoHocSinh();
-            cboGT.DisplayMember = "GioiTinh";
-            cboGT.ValueMember = "GioiTinh";
+          
         }
 
         private void cboMaLop_SelectedIndexChanged(object sender, EventArgs e)
