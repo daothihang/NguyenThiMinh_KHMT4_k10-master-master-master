@@ -61,7 +61,6 @@ namespace DAL
             cmd.Parameters.AddWithValue("mamon", dto.MaMon);
             cmd.Parameters.AddWithValue("macbgv", dto.MaCanBoGiaoVien);
             cmd.Parameters.AddWithValue("ngaypc", dto.NgayPhanCong);
-
             cmd.ExecuteNonQuery();
             KetNoiCoSoDuLieu.DongKetNoi();
 

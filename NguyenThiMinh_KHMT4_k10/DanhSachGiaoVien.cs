@@ -37,6 +37,22 @@ namespace NguyenThiMinh_KHMT4_k10
                 string TenLop = cboTenLop.Text;
                 DataTable dt = phanCongGiangDayBUL.DSPhanCongGiangDay(TenLop);
                 dgvHT.DataSource = dt;
+             
+                dgvHT.Columns[1].HeaderText = "MaGiaoVien";
+                dgvHT.Columns[1].Width = 100;
+                dgvHT.Columns[2].HeaderText = "HoTen";
+                dgvHT.Columns[2].Width = 100;
+                dgvHT.Columns[3].HeaderText = "TenMon";
+                dgvHT.Columns[3].Width = 100;
+                dgvHT.Columns[4].HeaderText = "NgayphanCong";
+                dgvHT.Columns[4].Width = 100;
+                dgvHT.Columns[5].HeaderText = "SoDienThoai";
+                dgvHT.Columns[5].Width = 100;
+                for (int i = 0; i < dgvHT.Rows.Count - 1; i++)
+                {
+                    dgvHT.Rows[i].Cells[0].Value = i + 1;
+                }
+
 
             }
 

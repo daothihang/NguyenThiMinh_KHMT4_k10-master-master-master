@@ -41,6 +41,7 @@
             this.PrintPreviewDialog = new System.Windows.Forms.PrintPreviewDialog();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.cbTenLop = new System.Windows.Forms.ComboBox();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoSoHocSinhBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachHocSinh)).BeginInit();
@@ -60,7 +61,9 @@
             // 
             this.dgvDanhSachHocSinh.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvDanhSachHocSinh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDanhSachHocSinh.Location = new System.Drawing.Point(22, 165);
+            this.dgvDanhSachHocSinh.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1});
+            this.dgvDanhSachHocSinh.Location = new System.Drawing.Point(22, 157);
             this.dgvDanhSachHocSinh.Name = "dgvDanhSachHocSinh";
             this.dgvDanhSachHocSinh.Size = new System.Drawing.Size(735, 172);
             this.dgvDanhSachHocSinh.TabIndex = 0;
@@ -146,6 +149,11 @@
             this.cbTenLop.Size = new System.Drawing.Size(129, 32);
             this.cbTenLop.TabIndex = 8;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "STT";
+            this.Column1.Name = "Column1";
+            // 
             // DanhSachHocSinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -189,5 +197,6 @@
         private System.Windows.Forms.PrintPreviewDialog PrintPreviewDialog;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ComboBox cbTenLop;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }

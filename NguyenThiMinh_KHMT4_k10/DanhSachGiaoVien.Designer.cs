@@ -36,6 +36,7 @@
             this.PrintDocument = new System.Drawing.Printing.PrintDocument();
             this.PrintPreviewDialog = new System.Windows.Forms.PrintPreviewDialog();
             this.btnLap = new System.Windows.Forms.Button();
+            this.colum1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHT)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,6 +76,8 @@
             // 
             this.dgvHT.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvHT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHT.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colum1});
             this.dgvHT.Location = new System.Drawing.Point(32, 85);
             this.dgvHT.Name = "dgvHT";
             this.dgvHT.Size = new System.Drawing.Size(584, 101);
@@ -106,6 +109,11 @@
             this.btnLap.UseVisualStyleBackColor = false;
             this.btnLap.Click += new System.EventHandler(this.btnLap_Click);
             // 
+            // colum1
+            // 
+            this.colum1.HeaderText = "STT";
+            this.colum1.Name = "colum1";
+            // 
             // DanhSachGiaoVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -136,5 +144,6 @@
         private System.Drawing.Printing.PrintDocument PrintDocument;
         private System.Windows.Forms.PrintPreviewDialog PrintPreviewDialog;
         private System.Windows.Forms.Button btnLap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colum1;
     }
 }
