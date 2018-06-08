@@ -114,7 +114,7 @@ namespace DAL
         {
             DataTable dt = new DataTable();
             KetNoiCoSoDuLieu.MoKetNoi();
-            String sqlFind3 = string.Format("select Lop.MaLop, Lop.TenLop, MonHoc.MaMon, MonHoc.TenMon from PhanCongGiangDay inner join CanBoGiaoVien on PhanCongGiangDay.MaCanBoGiaoVien= CanBoGiaoVien.MaCanBoGiaoVien inner join MonHoc on PhanCongGiangDay.MaMon= MonHoc.MaMon inner join Lop on PhanCongGiangDay.MaLop= Lop.MaLop  where TaiKhoan like'" + TaiKhoan + "%'");
+            String sqlFind3 = string.Format("select DISTINCT Lop.MaLop, Lop.TenLop, MonHoc.MaMon, MonHoc.TenMon from PhanCongGiangDay inner join CanBoGiaoVien on PhanCongGiangDay.MaCanBoGiaoVien= CanBoGiaoVien.MaCanBoGiaoVien inner join MonHoc on PhanCongGiangDay.MaMon= MonHoc.MaMon inner join Lop on PhanCongGiangDay.MaLop= Lop.MaLop  where TaiKhoan like'" + TaiKhoan + "%'");
             SqlDataAdapter da = new SqlDataAdapter(sqlFind3, KetNoiCoSoDuLieu.KetNoi);
             da.Fill(dt);
             KetNoiCoSoDuLieu.DongKetNoi();
