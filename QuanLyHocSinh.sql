@@ -217,8 +217,9 @@ insert into PhanCongGiangDay values(N'L01',N'M02',N'GV04',N'16/09/2018')
 insert into PhanCongGiangDay values(N'L01',N'M03',N'GV02',N'18/09/2018')
 
 insert into PhanCongGiangDay values(N'L02',N'M02',N'GV03',N'15/09/2018')
-insert into PhanCongGiangDay values(N'L02',N'M02',N'GV02',N'18/09/2018')
-insert into PhanCongGiangDay values(N'L02',N'M02',N'GV01',N'16/09/2018')
+insert into PhanCongGiangDay values(N'L02',N'M03',N'GV02',N'18/09/2018')
+insert into PhanCongGiangDay values(N'L02',N'M01',N'GV01',N'16/09/2018')
+
 
 insert into PhanCongGiangDay values(N'L03',N'M01',N'GV01',N'15/09/2018')
 insert into PhanCongGiangDay values(N'L03',N'M03',N'GV02',N'20/09/2018')
