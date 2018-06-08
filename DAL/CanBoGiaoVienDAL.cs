@@ -38,7 +38,7 @@ namespace DAL
             KetNoiCoSoDuLieu.MoKetNoi();
            
 
-            String kiemtra = "SELECT COUNT(*) FROM CanBoGiaoVien WHERE TaiKhoan='" + ten + "'AND MatKhau='" + mk + "' AND LoaiTaiKhoan='" + loaitk + "' ";
+            String kiemtra = "SELECT COUNT(*) FROM CanBoGiaoVien WHERE TaiKhoan='" + ten + "'AND MatKhau='" + mk + "' AND LoaiTaiKhoan='" + loaitk + "' COLLATE SQL_Latin1_General_CP1_CI_AS";
             SqlDataAdapter cmd = new SqlDataAdapter(kiemtra, KetNoiCoSoDuLieu.KetNoi);
             DataTable dt = new DataTable();
 

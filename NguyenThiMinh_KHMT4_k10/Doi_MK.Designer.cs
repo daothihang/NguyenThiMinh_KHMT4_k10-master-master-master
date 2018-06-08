@@ -216,6 +216,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Doi_MK";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Doi_MK";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

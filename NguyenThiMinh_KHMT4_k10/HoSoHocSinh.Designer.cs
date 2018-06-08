@@ -99,7 +99,6 @@
             this.label4.Size = new System.Drawing.Size(57, 17);
             this.label4.TabIndex = 3;
             this.label4.Text = "Giới tính";
-          
             // 
             // label5
             // 
@@ -347,6 +346,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "HoSoHocSinh";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HoSoHocSinh";
             this.Load += new System.EventHandler(this.HoSoHocSinh_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHSHS)).EndInit();

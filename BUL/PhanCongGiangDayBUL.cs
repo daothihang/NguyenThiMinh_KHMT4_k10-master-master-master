@@ -54,5 +54,10 @@ namespace BUL
             DataTable dt = myPhanCongDAL.layLopPhanCongTheoGv(TaiKhoan);
             return dt;
         }
+
+        public void xoaPC(PhanCongGiangDayDTO dto)
+        {
+            myPhanCongDAL.xoa(dto);
+        }
     }
 }

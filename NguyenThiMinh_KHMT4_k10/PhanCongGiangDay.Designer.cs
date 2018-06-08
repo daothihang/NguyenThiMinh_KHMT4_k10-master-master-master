@@ -61,6 +61,7 @@
             this.btnxem = new System.Windows.Forms.Button();
             this.btnthoat = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnxoa = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
@@ -101,7 +102,7 @@
             // 
             this.toolStripMenuItem14.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem14.Image")));
             this.toolStripMenuItem14.Name = "toolStripMenuItem14";
-            this.toolStripMenuItem14.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem14.Size = new System.Drawing.Size(164, 22);
             this.toolStripMenuItem14.Text = "Hồ sơ học sinh";
             this.toolStripMenuItem14.Click += new System.EventHandler(this.toolStripMenuItem14_Click);
             // 
@@ -109,7 +110,7 @@
             // 
             this.toolStripMenuItem15.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem15.Image")));
             this.toolStripMenuItem15.Name = "toolStripMenuItem15";
-            this.toolStripMenuItem15.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem15.Size = new System.Drawing.Size(164, 22);
             this.toolStripMenuItem15.Text = "Môn Học";
             this.toolStripMenuItem15.Click += new System.EventHandler(this.toolStripMenuItem15_Click);
             // 
@@ -117,7 +118,7 @@
             // 
             this.toolStripMenuItem16.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem16.Image")));
             this.toolStripMenuItem16.Name = "toolStripMenuItem16";
-            this.toolStripMenuItem16.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem16.Size = new System.Drawing.Size(164, 22);
             this.toolStripMenuItem16.Text = "Lớp";
             this.toolStripMenuItem16.Click += new System.EventHandler(this.toolStripMenuItem16_Click);
             // 
@@ -125,7 +126,7 @@
             // 
             this.toolStripMenuItem17.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem17.Image")));
             this.toolStripMenuItem17.Name = "toolStripMenuItem17";
-            this.toolStripMenuItem17.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem17.Size = new System.Drawing.Size(164, 22);
             this.toolStripMenuItem17.Text = "Cán bộ giáo viên";
             this.toolStripMenuItem17.Click += new System.EventHandler(this.toolStripMenuItem17_Click);
             // 
@@ -195,7 +196,7 @@
             // 
             this.họcSinhToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("họcSinhToolStripMenuItem.Image")));
             this.họcSinhToolStripMenuItem.Name = "họcSinhToolStripMenuItem";
-            this.họcSinhToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.họcSinhToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.họcSinhToolStripMenuItem.Text = "Học Sinh";
             this.họcSinhToolStripMenuItem.Click += new System.EventHandler(this.họcSinhToolStripMenuItem_Click);
             // 
@@ -203,7 +204,7 @@
             // 
             this.giáoViênToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("giáoViênToolStripMenuItem.Image")));
             this.giáoViênToolStripMenuItem.Name = "giáoViênToolStripMenuItem";
-            this.giáoViênToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.giáoViênToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.giáoViênToolStripMenuItem.Text = "Giáo Viên";
             this.giáoViênToolStripMenuItem.Click += new System.EventHandler(this.giáoViênToolStripMenuItem_Click);
             // 
@@ -238,7 +239,7 @@
             // 
             this.lbtenmon.AutoSize = true;
             this.lbtenmon.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbtenmon.Location = new System.Drawing.Point(107, 138);
+            this.lbtenmon.Location = new System.Drawing.Point(121, 108);
             this.lbtenmon.Name = "lbtenmon";
             this.lbtenmon.Size = new System.Drawing.Size(88, 13);
             this.lbtenmon.TabIndex = 4;
@@ -248,7 +249,7 @@
             // 
             this.lbtengv.AutoSize = true;
             this.lbtengv.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbtengv.Location = new System.Drawing.Point(380, 95);
+            this.lbtengv.Location = new System.Drawing.Point(117, 142);
             this.lbtengv.Name = "lbtengv";
             this.lbtengv.Size = new System.Drawing.Size(92, 13);
             this.lbtengv.TabIndex = 5;
@@ -258,7 +259,7 @@
             // 
             this.lbtenlop.AutoSize = true;
             this.lbtenlop.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbtenlop.Location = new System.Drawing.Point(107, 95);
+            this.lbtenlop.Location = new System.Drawing.Point(130, 65);
             this.lbtenlop.Name = "lbtenlop";
             this.lbtenlop.Size = new System.Drawing.Size(79, 13);
             this.lbtenlop.TabIndex = 6;
@@ -267,26 +268,26 @@
             // cbmon
             // 
             this.cbmon.FormattingEnabled = true;
-            this.cbmon.Location = new System.Drawing.Point(226, 130);
+            this.cbmon.Location = new System.Drawing.Point(226, 100);
             this.cbmon.Name = "cbmon";
             this.cbmon.Size = new System.Drawing.Size(121, 21);
-            this.cbmon.TabIndex = 7;
+            this.cbmon.TabIndex = 1;
             // 
             // cbgv
             // 
             this.cbgv.FormattingEnabled = true;
-            this.cbgv.Location = new System.Drawing.Point(499, 87);
+            this.cbgv.Location = new System.Drawing.Point(226, 134);
             this.cbgv.Name = "cbgv";
             this.cbgv.Size = new System.Drawing.Size(121, 21);
-            this.cbgv.TabIndex = 8;
+            this.cbgv.TabIndex = 2;
             // 
             // cblop
             // 
             this.cblop.FormattingEnabled = true;
-            this.cblop.Location = new System.Drawing.Point(226, 87);
+            this.cblop.Location = new System.Drawing.Point(226, 57);
             this.cblop.Name = "cblop";
             this.cblop.Size = new System.Drawing.Size(121, 21);
-            this.cblop.TabIndex = 9;
+            this.cblop.TabIndex = 0;
             // 
             // dgv
             // 
@@ -310,7 +311,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(380, 138);
+            this.label1.Location = new System.Drawing.Point(107, 185);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 13);
             this.label1.TabIndex = 12;
@@ -319,10 +320,10 @@
             // datephancong
             // 
             this.datephancong.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.datephancong.Location = new System.Drawing.Point(499, 131);
+            this.datephancong.Location = new System.Drawing.Point(226, 178);
             this.datephancong.Name = "datephancong";
             this.datephancong.Size = new System.Drawing.Size(121, 20);
-            this.datephancong.TabIndex = 13;
+            this.datephancong.TabIndex = 3;
             this.datephancong.Value = new System.DateTime(2018, 5, 30, 0, 0, 0, 0);
             // 
             // btnphancong
@@ -335,10 +336,10 @@
             this.btnphancong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnphancong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnphancong.ForeColor = System.Drawing.Color.White;
-            this.btnphancong.Location = new System.Drawing.Point(87, 210);
+            this.btnphancong.Location = new System.Drawing.Point(408, 79);
             this.btnphancong.Name = "btnphancong";
-            this.btnphancong.Size = new System.Drawing.Size(99, 29);
-            this.btnphancong.TabIndex = 14;
+            this.btnphancong.Size = new System.Drawing.Size(116, 29);
+            this.btnphancong.TabIndex = 4;
             this.btnphancong.Text = "Phân Công";
             this.btnphancong.UseVisualStyleBackColor = false;
             this.btnphancong.Click += new System.EventHandler(this.btnphancong_Click);
@@ -353,10 +354,10 @@
             this.btnsua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsua.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsua.ForeColor = System.Drawing.Color.White;
-            this.btnsua.Location = new System.Drawing.Point(209, 210);
+            this.btnsua.Location = new System.Drawing.Point(408, 126);
             this.btnsua.Name = "btnsua";
-            this.btnsua.Size = new System.Drawing.Size(87, 29);
-            this.btnsua.TabIndex = 15;
+            this.btnsua.Size = new System.Drawing.Size(116, 29);
+            this.btnsua.TabIndex = 5;
             this.btnsua.Text = "Sửa đổi";
             this.btnsua.UseVisualStyleBackColor = false;
             this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
@@ -372,10 +373,10 @@
             this.btnxem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnxem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnxem.ForeColor = System.Drawing.Color.White;
-            this.btnxem.Location = new System.Drawing.Point(327, 209);
+            this.btnxem.Location = new System.Drawing.Point(408, 175);
             this.btnxem.Name = "btnxem";
-            this.btnxem.Size = new System.Drawing.Size(119, 29);
-            this.btnxem.TabIndex = 16;
+            this.btnxem.Size = new System.Drawing.Size(116, 29);
+            this.btnxem.TabIndex = 6;
             this.btnxem.Text = "Xem Phân Công";
             this.btnxem.UseVisualStyleBackColor = false;
             this.btnxem.Click += new System.EventHandler(this.btnxem_Click);
@@ -390,10 +391,10 @@
             this.btnthoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnthoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnthoat.ForeColor = System.Drawing.Color.White;
-            this.btnthoat.Location = new System.Drawing.Point(583, 209);
+            this.btnthoat.Location = new System.Drawing.Point(560, 175);
             this.btnthoat.Name = "btnthoat";
-            this.btnthoat.Size = new System.Drawing.Size(77, 29);
-            this.btnthoat.TabIndex = 17;
+            this.btnthoat.Size = new System.Drawing.Size(100, 29);
+            this.btnthoat.TabIndex = 8;
             this.btnthoat.Text = "Thoát";
             this.btnthoat.UseVisualStyleBackColor = false;
             this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
@@ -408,19 +409,38 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(474, 209);
+            this.button1.Location = new System.Drawing.Point(560, 126);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 29);
-            this.button1.TabIndex = 18;
+            this.button1.Size = new System.Drawing.Size(100, 29);
+            this.button1.TabIndex = 7;
             this.button1.Text = "Hủy";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnxoa
+            // 
+            this.btnxoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnxoa.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btnxoa.FlatAppearance.BorderSize = 2;
+            this.btnxoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
+            this.btnxoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnxoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnxoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnxoa.ForeColor = System.Drawing.Color.White;
+            this.btnxoa.Location = new System.Drawing.Point(560, 79);
+            this.btnxoa.Name = "btnxoa";
+            this.btnxoa.Size = new System.Drawing.Size(100, 29);
+            this.btnxoa.TabIndex = 13;
+            this.btnxoa.Text = "Xóa";
+            this.btnxoa.UseVisualStyleBackColor = false;
+            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
             // 
             // PhanCongGiangDay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 486);
+            this.Controls.Add(this.btnxoa);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnthoat);
             this.Controls.Add(this.btnxem);
@@ -483,5 +503,6 @@
         private System.Windows.Forms.Button btnthoat;
         private System.Windows.Forms.ToolStripMenuItem giáoViênToolStripMenuItem;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnxoa;
     }
 }

@@ -33,6 +33,7 @@
             this.lopBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hoSoHocSinhBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dgvDanhSachHocSinh = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnPrinter = new System.Windows.Forms.Button();
@@ -41,7 +42,6 @@
             this.PrintPreviewDialog = new System.Windows.Forms.PrintPreviewDialog();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.cbTenLop = new System.Windows.Forms.ComboBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoSoHocSinhBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachHocSinh)).BeginInit();
@@ -69,6 +69,11 @@
             this.dgvDanhSachHocSinh.TabIndex = 0;
             this.dgvDanhSachHocSinh.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachHocSinh_CellContentClick);
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "STT";
+            this.Column1.Name = "Column1";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -92,7 +97,7 @@
             // 
             // btnPrinter
             // 
-            this.btnPrinter.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnPrinter.BackColor = System.Drawing.Color.Green;
             this.btnPrinter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrinter.ForeColor = System.Drawing.Color.White;
             this.btnPrinter.Location = new System.Drawing.Point(644, 46);
@@ -109,7 +114,7 @@
             // 
             // btnTim
             // 
-            this.btnTim.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnTim.BackColor = System.Drawing.Color.Green;
             this.btnTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTim.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnTim.Location = new System.Drawing.Point(76, 47);
@@ -148,11 +153,6 @@
             this.cbTenLop.Name = "cbTenLop";
             this.cbTenLop.Size = new System.Drawing.Size(129, 32);
             this.cbTenLop.TabIndex = 8;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "STT";
-            this.Column1.Name = "Column1";
             // 
             // DanhSachHocSinh
             // 

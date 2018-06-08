@@ -69,7 +69,7 @@ namespace DAL
         {
             DataTable dt = new DataTable();
             KetNoiCoSoDuLieu.MoKetNoi();
-            String sqlFind = string.Format("select CanBoGiaoVien.MaCanBoGiaoVien, CanBoGiaoVien.HoTen, CanBoGiaoVien.SoDienthoai, MonHoc.TenMon, PhanCongGiangDay.NgayPhanCong from PhanCongGiangDay inner join CanBoGiaoVien on PhanCongGiangDay.MaCanBoGiaoVien= CanBoGiaoVien.MaCanBoGiaoVien inner join MonHoc on PhanCongGiangDay.MaMon= MonHoc.MaMon inner join Lop on PhanCongGiangDay.MaLop= Lop.MaLop where TenLop like'" +TenLop + "%' ");
+            String sqlFind = string.Format("select  MonHoc.TenMon, CanBoGiaoVien.MaCanBoGiaoVien , CanBoGiaoVien.HoTen , CanBoGiaoVien.SoDienthoai , PhanCongGiangDay.NgayPhanCong from PhanCongGiangDay inner join CanBoGiaoVien on PhanCongGiangDay.MaCanBoGiaoVien= CanBoGiaoVien.MaCanBoGiaoVien inner join MonHoc on PhanCongGiangDay.MaMon= MonHoc.MaMon inner join Lop on PhanCongGiangDay.MaLop= Lop.MaLop where TenLop like'" + TenLop + "%' ");
             SqlDataAdapter da = new SqlDataAdapter(sqlFind, KetNoiCoSoDuLieu.KetNoi);
             da.Fill(dt);
             KetNoiCoSoDuLieu.DongKetNoi();
@@ -81,7 +81,7 @@ namespace DAL
         {
             DataTable dt = new DataTable();
             KetNoiCoSoDuLieu.MoKetNoi();
-            String sqlFind = string.Format("select MonHoc.MaMon, MonHoc.TenMon,CanBoGiaoVien.MaCanBoGiaoVien, CanBoGiaoVien.HoTen, CanBoGiaoVien.SoDienthoai, PhanCongGiangDay.NgayPhanCong from PhanCongGiangDay inner join CanBoGiaoVien on PhanCongGiangDay.MaCanBoGiaoVien= CanBoGiaoVien.MaCanBoGiaoVien inner join MonHoc on PhanCongGiangDay.MaMon= MonHoc.MaMon inner join Lop on PhanCongGiangDay.MaLop= Lop.MaLop where TenLop like'" + TenLop + "%' ");
+            String sqlFind = string.Format("select MonHoc.MaMon as 'Mã Môn', MonHoc.TenMon as 'Tên Môn',CanBoGiaoVien.MaCanBoGiaoVien as 'Mã CBGV', CanBoGiaoVien.HoTen as 'Họ Tên', CanBoGiaoVien.SoDienthoai as 'SĐT', PhanCongGiangDay.NgayPhanCong as 'Ngày PhCông' from PhanCongGiangDay inner join CanBoGiaoVien on PhanCongGiangDay.MaCanBoGiaoVien= CanBoGiaoVien.MaCanBoGiaoVien inner join MonHoc on PhanCongGiangDay.MaMon= MonHoc.MaMon inner join Lop on PhanCongGiangDay.MaLop= Lop.MaLop where TenLop like'" + TenLop + "%' ");
             SqlDataAdapter da = new SqlDataAdapter(sqlFind, KetNoiCoSoDuLieu.KetNoi);
             da.Fill(dt);
             KetNoiCoSoDuLieu.DongKetNoi();
@@ -92,7 +92,7 @@ namespace DAL
         {
             DataTable dt = new DataTable();
             KetNoiCoSoDuLieu.MoKetNoi();
-            String sqlFind1 = string.Format("select Lop.MaLop,Lop.TenLop,CanBoGiaoVien.MaCanBoGiaoVien, CanBoGiaoVien.HoTen, CanBoGiaoVien.SoDienthoai, PhanCongGiangDay.NgayPhanCong from PhanCongGiangDay inner join CanBoGiaoVien on PhanCongGiangDay.MaCanBoGiaoVien= CanBoGiaoVien.MaCanBoGiaoVien inner join MonHoc on PhanCongGiangDay.MaMon= MonHoc.MaMon inner join Lop on PhanCongGiangDay.MaLop= Lop.MaLop where TenMon like'" + TenMon + "%' ");
+            String sqlFind1 = string.Format("select Lop.MaLop as 'Mã Lớp',Lop.TenLop as 'Tên Lớp',CanBoGiaoVien.MaCanBoGiaoVien as 'Mã CBGV', CanBoGiaoVien.HoTen as 'Họ Tên', CanBoGiaoVien.SoDienthoai as 'SĐT', PhanCongGiangDay.NgayPhanCong as 'Ngày PhCông' from PhanCongGiangDay inner join CanBoGiaoVien on PhanCongGiangDay.MaCanBoGiaoVien= CanBoGiaoVien.MaCanBoGiaoVien inner join MonHoc on PhanCongGiangDay.MaMon= MonHoc.MaMon inner join Lop on PhanCongGiangDay.MaLop= Lop.MaLop where TenMon like'" + TenMon + "%' ");
             SqlDataAdapter da = new SqlDataAdapter(sqlFind1, KetNoiCoSoDuLieu.KetNoi);
             da.Fill(dt);
             KetNoiCoSoDuLieu.DongKetNoi();
@@ -103,7 +103,7 @@ namespace DAL
         {
             DataTable dt = new DataTable();
             KetNoiCoSoDuLieu.MoKetNoi();
-            String sqlFind2 = string.Format("select Lop.MaLop,Lop.TenLop, MonHoc.MaMon, MonHoc.TenMon, PhanCongGiangDay.NgayPhanCong from PhanCongGiangDay inner join CanBoGiaoVien on PhanCongGiangDay.MaCanBoGiaoVien= CanBoGiaoVien.MaCanBoGiaoVien inner join MonHoc on PhanCongGiangDay.MaMon= MonHoc.MaMon inner join Lop on PhanCongGiangDay.MaLop= Lop.MaLop where HoTen like'" + TenGV + "%' ");
+            String sqlFind2 = string.Format("select Lop.MaLop as 'Mã Lớp' ,Lop.TenLop as 'Tên Lớp' , MonHoc.MaMon as 'Mã Môn', MonHoc.TenMon as 'Tên Môn', PhanCongGiangDay.NgayPhanCong as 'Ngày PhCông' from PhanCongGiangDay inner join CanBoGiaoVien on PhanCongGiangDay.MaCanBoGiaoVien= CanBoGiaoVien.MaCanBoGiaoVien inner join MonHoc on PhanCongGiangDay.MaMon= MonHoc.MaMon inner join Lop on PhanCongGiangDay.MaLop= Lop.MaLop where HoTen like'" + TenGV + "%' ");
             SqlDataAdapter da = new SqlDataAdapter(sqlFind2, KetNoiCoSoDuLieu.KetNoi);
             da.Fill(dt);
             KetNoiCoSoDuLieu.DongKetNoi();
@@ -114,11 +114,28 @@ namespace DAL
         {
             DataTable dt = new DataTable();
             KetNoiCoSoDuLieu.MoKetNoi();
-            String sqlFind3 = string.Format("select Lop.MaLop,Lop.TenLop, MonHoc.MaMon, MonHoc.TenMon from PhanCongGiangDay inner join CanBoGiaoVien on PhanCongGiangDay.MaCanBoGiaoVien= CanBoGiaoVien.MaCanBoGiaoVien inner join MonHoc on PhanCongGiangDay.MaMon= MonHoc.MaMon inner join Lop on PhanCongGiangDay.MaLop= Lop.MaLop where TaiKhoan like'" + TaiKhoan + "%' ");
+            String sqlFind3 = string.Format("select Lop.MaLop, Lop.TenLop, MonHoc.MaMon, MonHoc.TenMon from PhanCongGiangDay inner join CanBoGiaoVien on PhanCongGiangDay.MaCanBoGiaoVien= CanBoGiaoVien.MaCanBoGiaoVien inner join MonHoc on PhanCongGiangDay.MaMon= MonHoc.MaMon inner join Lop on PhanCongGiangDay.MaLop= Lop.MaLop  where TaiKhoan like'" + TaiKhoan + "%'");
             SqlDataAdapter da = new SqlDataAdapter(sqlFind3, KetNoiCoSoDuLieu.KetNoi);
             da.Fill(dt);
             KetNoiCoSoDuLieu.DongKetNoi();
             return dt;
+        }
+
+
+
+        public void xoa(PhanCongGiangDayDTO dto)
+        {
+            KetNoiCoSoDuLieu.MoKetNoi();
+
+            String sqlsua = "Delete PhanCongGiangDay where MaLop=@malop AND MaMon=@mamon AND MaCanBoGiaoVien=@macbgv";
+            SqlCommand cmd = new SqlCommand(sqlsua, KetNoiCoSoDuLieu.KetNoi);
+
+            cmd.Parameters.AddWithValue("malop", dto.MaLop);
+            cmd.Parameters.AddWithValue("mamon", dto.MaMon);
+            cmd.Parameters.AddWithValue("macbgv", dto.MaCanBoGiaoVien);
+            cmd.ExecuteNonQuery();
+            KetNoiCoSoDuLieu.DongKetNoi();
+
         }
     }
 }

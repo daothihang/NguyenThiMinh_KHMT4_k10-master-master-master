@@ -49,6 +49,9 @@
             // btndnhap
             // 
             this.btndnhap.BackColor = System.Drawing.Color.Blue;
+            this.btndnhap.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Aqua;
+            this.btndnhap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
+            this.btndnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndnhap.ForeColor = System.Drawing.Color.White;
             this.btndnhap.Location = new System.Drawing.Point(72, 180);
             this.btndnhap.Name = "btndnhap";
@@ -117,6 +120,9 @@
             // btncancel
             // 
             this.btncancel.BackColor = System.Drawing.Color.Blue;
+            this.btncancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.btncancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
+            this.btncancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncancel.ForeColor = System.Drawing.Color.White;
             this.btncancel.Location = new System.Drawing.Point(179, 180);
             this.btncancel.Name = "btncancel";

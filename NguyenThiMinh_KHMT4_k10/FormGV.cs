@@ -20,7 +20,7 @@ namespace NguyenThiMinh_KHMT4_k10
         
         private void toolStripMenuItem21_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
             QuanLyDiemGV diem = new QuanLyDiemGV(lbtengv.Text);
             diem.Show();
         }
@@ -29,5 +29,26 @@ namespace NguyenThiMinh_KHMT4_k10
         {
 
         }
+
+        private void họcSinhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            XemHoSoHocSinh hs = new XemHoSoHocSinh();
+            hs.Show();
+        }
+
+        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Doi_MK doimk = new Doi_MK();
+            doimk.Show();
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            HeThong ht = new HeThong();
+            ht.Show();
+        }
+
+        
     }
 }

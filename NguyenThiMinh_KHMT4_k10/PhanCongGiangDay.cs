@@ -62,8 +62,44 @@ namespace NguyenThiMinh_KHMT4_k10
 
         private void btnphancong_Click(object sender, EventArgs e)
         {
-            myPhanCong.phanCong((String)cblop.SelectedValue, (String)cbmon.SelectedValue, (String)cbgv.SelectedValue, datephancong.Text);
-            hienthi();
+            
+            if (cblop.SelectedIndex != -1 && cbgv.SelectedIndex != -1 && cbmon.SelectedIndex != -1)
+            {
+                int dem = 0;
+                string lop = cblop.SelectedValue.ToString();
+                string mon = cbmon.SelectedValue.ToString();
+                for (int i = 0; i < dgv.RowCount; i++)
+                {
+                    string lopm = dgv.Rows[i].Cells["MaLop"].Value.ToString();
+                    string monm = dgv.Rows[i].Cells["MaMon"].Value.ToString();
+                    if (lop==lopm && mon==monm)
+                    {
+                        dem++;
+                    }
+                    else
+                    {
+
+
+                    }
+                }
+                if (dem == 0)
+                {
+                    myPhanCong.phanCong((String)cblop.SelectedValue, (String)cbmon.SelectedValue, (String)cbgv.SelectedValue, datephancong.Text);
+                    MessageBox.Show("Phân công thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    hienthi();
+                }
+                else
+                {
+                    MessageBox.Show("Phân công không thành công, lỗi do trùng dữ liệu hoặc do lịch giảng dạy này đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+              
+             
+            }
+            else
+            {
+                MessageBox.Show("Phân công không thành công, thao tác không hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnxem_Click(object sender, EventArgs e)
@@ -84,6 +120,10 @@ namespace NguyenThiMinh_KHMT4_k10
                 DataTable dt2 = myPhanCong.XemDsPhanCongTheoGv(cbgv.Text);
                 dgv.DataSource = dt2;
             }
+            else if (cblop.SelectedIndex == -1 && cbmon.SelectedIndex == -1 && cbgv.SelectedIndex == -1)
+            {
+                MessageBox.Show("Thao tác không hợp lệ! Bạn cần chọn Tên môn học hoặc Tên lớp hoặc Tên GV. Thank you!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
 
 
@@ -91,9 +131,17 @@ namespace NguyenThiMinh_KHMT4_k10
 
         private void btnsua_Click(object sender, EventArgs e)
         {
-            PhanCongGiangDayDTO dto = new PhanCongGiangDayDTO((String)cblop.SelectedValue, (String)cbmon.SelectedValue, (String)cbgv.SelectedValue, datephancong.Text);
-            myPhanCong.sua(dto);
-            hienthi();
+            if (cblop.SelectedIndex != -1 && cbgv.SelectedIndex != -1 && cbmon.SelectedIndex != -1)
+            {
+                PhanCongGiangDayDTO dto = new PhanCongGiangDayDTO((String)cblop.SelectedValue, (String)cbmon.SelectedValue, (String)cbgv.SelectedValue, datephancong.Text);
+                myPhanCong.sua(dto);
+                MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                hienthi();
+            }
+            else
+            {
+                MessageBox.Show("Thao tác không hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
@@ -163,6 +211,13 @@ namespace NguyenThiMinh_KHMT4_k10
         {
             XemCanBoGV cbgv = new XemCanBoGV();
             cbgv.Show();
+        }
+
+        private void btnxoa_Click(object sender, EventArgs e)
+        {
+             PhanCongGiangDayDTO dto = new PhanCongGiangDayDTO((String)cblop.SelectedValue, (String)cbmon.SelectedValue, (String)cbgv.SelectedValue, datephancong.Text);
+             myPhanCong.xoaPC(dto);
+             hienthi();
         }
     }
 }

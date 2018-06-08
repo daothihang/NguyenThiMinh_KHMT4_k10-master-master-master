@@ -48,7 +48,16 @@ namespace NguyenThiMinh_KHMT4_k10
             }
             else
             {
-                MessageBox.Show("Đăng nhập không thành công");
+                DialogResult result= MessageBox.Show("Đăng nhập không thành công","Thông Báo",MessageBoxButtons.OKCancel,MessageBoxIcon.Error);
+                if (result == DialogResult.OK)
+                {
+                    txttendn.Text = "";
+                    txtmk.Text = "";
+                }
+                else if (result == DialogResult.Cancel)
+                {
+
+                }
             }
         }
 

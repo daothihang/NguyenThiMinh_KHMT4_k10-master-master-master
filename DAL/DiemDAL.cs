@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -27,6 +28,34 @@ namespace DAL
             }
             KetNoiCoSoDuLieu.DongKetNoi();
             return ds;
+
+        }
+
+        public DataTable DSHocSinh(string MaLop,string MaMon)
+        {
+            DataTable dt = new DataTable();
+            KetNoiCoSoDuLieu.MoKetNoi();
+            String sqlFind = string.Format("select HoSoHocSinh.MaHocSinh,HoSoHocSinh.HoTen, Diem.DiemTB_Ky1,Diem.DiemTB_Ky2 from Diem inner join HoSoHocSinh on Diem.MaHocSinh= HoSoHocSinh.MaHocSinh inner join PhanCongGiangDay on Diem.MaMonHoc= PhanCongGiangDay.MaMon inner join MonHoc on Diem.MaMonHoc= MonHoc.MaMon where PhanCongGiangDay.MaLop like'" + MaLop + "%' and PhanCongGiangDay.MaMon like'" + MaMon+"%' ");
+            SqlDataAdapter da = new SqlDataAdapter(sqlFind, KetNoiCoSoDuLieu.KetNoi);
+            da.Fill(dt);
+            KetNoiCoSoDuLieu.DongKetNoi();
+            return dt;
+        }
+
+
+        public void sua(float diemky1,float diemky2,string mahs,string mamon)
+        {
+            KetNoiCoSoDuLieu.MoKetNoi();
+
+            String sqlsua = "UPDATE Diem SET DiemTB_Ky1=@diemky1, DiemTB_Ky2=@diemky2 where MaHocSinh=@mahs and MaMonHoc=@mamon";
+            SqlCommand cmd = new SqlCommand(sqlsua, KetNoiCoSoDuLieu.KetNoi);
+
+            cmd.Parameters.AddWithValue("diemky1", diemky1);
+            cmd.Parameters.AddWithValue("diemky2", diemky2);
+            cmd.Parameters.AddWithValue("mahs", mahs);
+            cmd.Parameters.AddWithValue("mamon", mamon);
+            cmd.ExecuteNonQuery();
+            KetNoiCoSoDuLieu.DongKetNoi();
 
         }
     }

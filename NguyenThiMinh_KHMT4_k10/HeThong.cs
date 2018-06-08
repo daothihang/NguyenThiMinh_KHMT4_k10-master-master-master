@@ -44,8 +44,8 @@ namespace NguyenThiMinh_KHMT4_k10
 
         private void HeThong_Load(object sender, EventArgs e)
         {
-            //timer1.Start();
-            //timer2.Start();
+            timer1.Start();
+            timer2.Start();
         }
 
         
