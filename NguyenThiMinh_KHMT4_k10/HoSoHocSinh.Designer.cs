@@ -155,42 +155,42 @@
             this.txtMaHS.Location = new System.Drawing.Point(106, 26);
             this.txtMaHS.Name = "txtMaHS";
             this.txtMaHS.Size = new System.Drawing.Size(178, 20);
-            this.txtMaHS.TabIndex = 9;
+            this.txtMaHS.TabIndex = 0;
             // 
             // txtHoTen
             // 
             this.txtHoTen.Location = new System.Drawing.Point(106, 71);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(178, 20);
-            this.txtHoTen.TabIndex = 10;
+            this.txtHoTen.TabIndex = 1;
             // 
             // txtĐiaChi
             // 
             this.txtĐiaChi.Location = new System.Drawing.Point(106, 223);
             this.txtĐiaChi.Name = "txtĐiaChi";
             this.txtĐiaChi.Size = new System.Drawing.Size(178, 20);
-            this.txtĐiaChi.TabIndex = 12;
+            this.txtĐiaChi.TabIndex = 4;
             // 
             // txtDiemVT
             // 
             this.txtDiemVT.Location = new System.Drawing.Point(498, 26);
             this.txtDiemVT.Name = "txtDiemVT";
             this.txtDiemVT.Size = new System.Drawing.Size(178, 20);
-            this.txtDiemVT.TabIndex = 13;
+            this.txtDiemVT.TabIndex = 5;
             // 
             // txtTenBM
             // 
             this.txtTenBM.Location = new System.Drawing.Point(498, 77);
             this.txtTenBM.Name = "txtTenBM";
             this.txtTenBM.Size = new System.Drawing.Size(178, 20);
-            this.txtTenBM.TabIndex = 14;
+            this.txtTenBM.TabIndex = 6;
             // 
             // txtSDT
             // 
             this.txtSDT.Location = new System.Drawing.Point(498, 129);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(178, 20);
-            this.txtSDT.TabIndex = 15;
+            this.txtSDT.TabIndex = 7;
             // 
             // cboGT
             // 
@@ -201,7 +201,7 @@
             this.cboGT.Location = new System.Drawing.Point(106, 173);
             this.cboGT.Name = "cboGT";
             this.cboGT.Size = new System.Drawing.Size(178, 21);
-            this.cboGT.TabIndex = 16;
+            this.cboGT.TabIndex = 3;
             this.cboGT.SelectedIndexChanged += new System.EventHandler(this.cboGT_SelectedIndexChanged);
             // 
             // cboMaLop
@@ -210,7 +210,7 @@
             this.cboMaLop.Location = new System.Drawing.Point(498, 175);
             this.cboMaLop.Name = "cboMaLop";
             this.cboMaLop.Size = new System.Drawing.Size(178, 21);
-            this.cboMaLop.TabIndex = 17;
+            this.cboMaLop.TabIndex = 8;
             this.cboMaLop.SelectedIndexChanged += new System.EventHandler(this.cboMaLop_SelectedIndexChanged);
             // 
             // dgvHSHS
@@ -229,7 +229,7 @@
             this.dateTimePicker1.Location = new System.Drawing.Point(106, 126);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(178, 20);
-            this.dateTimePicker1.TabIndex = 24;
+            this.dateTimePicker1.TabIndex = 2;
             // 
             // menuStrip1
             // 
@@ -244,7 +244,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(750, 30);
-            this.menuStrip1.TabIndex = 25;
+            this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // btnThem

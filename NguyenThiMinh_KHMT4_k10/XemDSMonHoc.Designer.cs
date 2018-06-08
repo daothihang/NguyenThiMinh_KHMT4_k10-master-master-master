@@ -53,7 +53,7 @@
             this.txtMaMon.Location = new System.Drawing.Point(16, 64);
             this.txtMaMon.Name = "txtMaMon";
             this.txtMaMon.Size = new System.Drawing.Size(168, 20);
-            this.txtMaMon.TabIndex = 1;
+            this.txtMaMon.TabIndex = 0;
             // 
             // btnTimMa
             // 
@@ -97,7 +97,7 @@
             this.cbTenMon.Location = new System.Drawing.Point(242, 64);
             this.cbTenMon.Name = "cbTenMon";
             this.cbTenMon.Size = new System.Drawing.Size(171, 21);
-            this.cbTenMon.TabIndex = 5;
+            this.cbTenMon.TabIndex = 1;
             // 
             // dgvDSMonHoc
             // 

@@ -63,7 +63,7 @@
             this.txtMaLop.Location = new System.Drawing.Point(12, 72);
             this.txtMaLop.Name = "txtMaLop";
             this.txtMaLop.Size = new System.Drawing.Size(146, 20);
-            this.txtMaLop.TabIndex = 2;
+            this.txtMaLop.TabIndex = 0;
             // 
             // btnTimMa
             // 
@@ -107,7 +107,7 @@
             this.cbTen.Location = new System.Drawing.Point(199, 72);
             this.cbTen.Name = "cbTen";
             this.cbTen.Size = new System.Drawing.Size(164, 21);
-            this.cbTen.TabIndex = 6;
+            this.cbTen.TabIndex = 1;
             // 
             // XemDSLop
             // 

@@ -132,42 +132,42 @@
             this.txtMCBGV.Location = new System.Drawing.Point(152, 22);
             this.txtMCBGV.Name = "txtMCBGV";
             this.txtMCBGV.Size = new System.Drawing.Size(147, 20);
-            this.txtMCBGV.TabIndex = 11;
+            this.txtMCBGV.TabIndex = 0;
             // 
             // txtHoTen
             // 
             this.txtHoTen.Location = new System.Drawing.Point(152, 62);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(147, 20);
-            this.txtHoTen.TabIndex = 12;
+            this.txtHoTen.TabIndex = 1;
             // 
             // txtDiaChi
             // 
             this.txtDiaChi.Location = new System.Drawing.Point(152, 102);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(147, 20);
-            this.txtDiaChi.TabIndex = 13;
+            this.txtDiaChi.TabIndex = 2;
             // 
             // txtSDT
             // 
             this.txtSDT.Location = new System.Drawing.Point(152, 142);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(147, 20);
-            this.txtSDT.TabIndex = 14;
+            this.txtSDT.TabIndex = 3;
             // 
             // txtTaiKhoan
             // 
             this.txtTaiKhoan.Location = new System.Drawing.Point(512, 22);
             this.txtTaiKhoan.Name = "txtTaiKhoan";
             this.txtTaiKhoan.Size = new System.Drawing.Size(147, 20);
-            this.txtTaiKhoan.TabIndex = 15;
+            this.txtTaiKhoan.TabIndex = 4;
             // 
             // txtMatKhau
             // 
             this.txtMatKhau.Location = new System.Drawing.Point(512, 62);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(147, 20);
-            this.txtMatKhau.TabIndex = 16;
+            this.txtMatKhau.TabIndex = 5;
             // 
             // cboLoaiTK
             // 
@@ -179,7 +179,7 @@
             this.cboLoaiTK.Location = new System.Drawing.Point(512, 101);
             this.cboLoaiTK.Name = "cboLoaiTK";
             this.cboLoaiTK.Size = new System.Drawing.Size(147, 21);
-            this.cboLoaiTK.TabIndex = 17;
+            this.cboLoaiTK.TabIndex = 6;
             // 
             // dgvCBGV
             // 

@@ -37,6 +37,7 @@
             this.btnXem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnHuy = new System.Windows.Forms.ToolStripMenuItem();
             this.lưuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbGiaoVienChuNhiem = new System.Windows.Forms.ComboBox();
             this.txtbSiSo = new System.Windows.Forms.TextBox();
@@ -48,20 +49,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgvLop = new System.Windows.Forms.DataGridView();
-            this.maLopDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenLopDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nienKhoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.siSoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.giaoVienChuNhiemDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lopBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dgvLop = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLop)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -137,6 +132,15 @@
             this.lưuToolStripMenuItem.Text = "Lưu";
             this.lưuToolStripMenuItem.Click += new System.EventHandler(this.lưuToolStripMenuItem_Click);
             // 
+            // thoátToolStripMenuItem
+            // 
+            this.thoátToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thoátToolStripMenuItem.Margin = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(71, 26);
+            this.thoátToolStripMenuItem.Text = "Thoát";
+            this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
+            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -164,7 +168,7 @@
             this.cbGiaoVienChuNhiem.Location = new System.Drawing.Point(34, 311);
             this.cbGiaoVienChuNhiem.Name = "cbGiaoVienChuNhiem";
             this.cbGiaoVienChuNhiem.Size = new System.Drawing.Size(104, 22);
-            this.cbGiaoVienChuNhiem.TabIndex = 9;
+            this.cbGiaoVienChuNhiem.TabIndex = 4;
             this.cbGiaoVienChuNhiem.SelectedIndexChanged += new System.EventHandler(this.cbGiaoVienChuNhiem_SelectedIndexChanged);
             // 
             // txtbSiSo
@@ -172,28 +176,28 @@
             this.txtbSiSo.Location = new System.Drawing.Point(34, 252);
             this.txtbSiSo.Name = "txtbSiSo";
             this.txtbSiSo.Size = new System.Drawing.Size(104, 20);
-            this.txtbSiSo.TabIndex = 8;
+            this.txtbSiSo.TabIndex = 3;
             // 
             // txtbNienKhoa
             // 
             this.txtbNienKhoa.Location = new System.Drawing.Point(32, 186);
             this.txtbNienKhoa.Name = "txtbNienKhoa";
             this.txtbNienKhoa.Size = new System.Drawing.Size(107, 20);
-            this.txtbNienKhoa.TabIndex = 7;
+            this.txtbNienKhoa.TabIndex = 2;
             // 
             // txtbTenLop
             // 
             this.txtbTenLop.Location = new System.Drawing.Point(34, 115);
             this.txtbTenLop.Name = "txtbTenLop";
             this.txtbTenLop.Size = new System.Drawing.Size(104, 20);
-            this.txtbTenLop.TabIndex = 6;
+            this.txtbTenLop.TabIndex = 1;
             // 
             // txtbMaLop
             // 
             this.txtbMaLop.Location = new System.Drawing.Point(34, 44);
             this.txtbMaLop.Name = "txtbMaLop";
             this.txtbMaLop.Size = new System.Drawing.Size(104, 20);
-            this.txtbMaLop.TabIndex = 5;
+            this.txtbMaLop.TabIndex = 0;
             // 
             // label5
             // 
@@ -250,61 +254,9 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã lớp";
             // 
-            // dgvLop
-            // 
-            this.dgvLop.AutoGenerateColumns = false;
-            this.dgvLop.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dgvLop.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLop.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.maLopDataGridViewTextBoxColumn,
-            this.tenLopDataGridViewTextBoxColumn,
-            this.nienKhoaDataGridViewTextBoxColumn,
-            this.siSoDataGridViewTextBoxColumn,
-            this.giaoVienChuNhiemDataGridViewTextBoxColumn});
-            this.dgvLop.Cursor = System.Windows.Forms.Cursors.Default;
-            this.dgvLop.DataSource = this.lopBindingSource;
-            this.dgvLop.Location = new System.Drawing.Point(181, 145);
-            this.dgvLop.Name = "dgvLop";
-            this.dgvLop.Size = new System.Drawing.Size(554, 218);
-            this.dgvLop.TabIndex = 2;
-            // 
-            // maLopDataGridViewTextBoxColumn
-            // 
-            this.maLopDataGridViewTextBoxColumn.DataPropertyName = "MaLop";
-            this.maLopDataGridViewTextBoxColumn.HeaderText = "MaLop";
-            this.maLopDataGridViewTextBoxColumn.Name = "maLopDataGridViewTextBoxColumn";
-            // 
-            // tenLopDataGridViewTextBoxColumn
-            // 
-            this.tenLopDataGridViewTextBoxColumn.DataPropertyName = "TenLop";
-            this.tenLopDataGridViewTextBoxColumn.HeaderText = "TenLop";
-            this.tenLopDataGridViewTextBoxColumn.Name = "tenLopDataGridViewTextBoxColumn";
-            // 
-            // nienKhoaDataGridViewTextBoxColumn
-            // 
-            this.nienKhoaDataGridViewTextBoxColumn.DataPropertyName = "NienKhoa";
-            this.nienKhoaDataGridViewTextBoxColumn.HeaderText = "NienKhoa";
-            this.nienKhoaDataGridViewTextBoxColumn.Name = "nienKhoaDataGridViewTextBoxColumn";
-            // 
-            // siSoDataGridViewTextBoxColumn
-            // 
-            this.siSoDataGridViewTextBoxColumn.DataPropertyName = "SiSo";
-            this.siSoDataGridViewTextBoxColumn.HeaderText = "SiSo";
-            this.siSoDataGridViewTextBoxColumn.Name = "siSoDataGridViewTextBoxColumn";
-            // 
-            // giaoVienChuNhiemDataGridViewTextBoxColumn
-            // 
-            this.giaoVienChuNhiemDataGridViewTextBoxColumn.DataPropertyName = "GiaoVienChuNhiem";
-            this.giaoVienChuNhiemDataGridViewTextBoxColumn.HeaderText = "GiaoVienChuNhiem";
-            this.giaoVienChuNhiemDataGridViewTextBoxColumn.Name = "giaoVienChuNhiemDataGridViewTextBoxColumn";
-            this.giaoVienChuNhiemDataGridViewTextBoxColumn.Width = 130;
-            // 
             // lopBindingSource
             // 
             this.lopBindingSource.DataMember = "Lop";
-            // 
-            // quanLyHocSinhDataSet
-            // 
             // 
             // pictureBox1
             // 
@@ -316,14 +268,14 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // thoátToolStripMenuItem
+            // dgvLop
             // 
-            this.thoátToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.thoátToolStripMenuItem.Margin = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(71, 26);
-            this.thoátToolStripMenuItem.Text = "Thoát";
-            this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
+            this.dgvLop.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvLop.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLop.Location = new System.Drawing.Point(181, 167);
+            this.dgvLop.Name = "dgvLop";
+            this.dgvLop.Size = new System.Drawing.Size(553, 214);
+            this.dgvLop.TabIndex = 4;
             // 
             // Lop
             // 
@@ -331,8 +283,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(737, 381);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dgvLop);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -345,9 +297,9 @@
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLop)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -372,15 +324,15 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dgvLop;
         private System.Windows.Forms.BindingSource lopBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maLopDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenLopDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nienKhoaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn siSoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn giaoVienChuNhiemDataGridViewTextBoxColumn;
+       // private System.Windows.Forms.DataGridViewTextBoxColumn maLopDataGridViewTextBoxColumn;
+       // private System.Windows.Forms.DataGridViewTextBoxColumn tenLopDataGridViewTextBoxColumn;
+       // private System.Windows.Forms.DataGridViewTextBoxColumn nienKhoaDataGridViewTextBoxColumn;
+       // private System.Windows.Forms.DataGridViewTextBoxColumn siSoDataGridViewTextBoxColumn;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn giaoVienChuNhiemDataGridViewTextBoxColumn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem lưuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thoátToolStripMenuItem;
+        private System.Windows.Forms.DataGridView dgvLop;
     }
 }
