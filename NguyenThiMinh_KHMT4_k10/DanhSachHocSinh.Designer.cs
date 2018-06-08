@@ -147,11 +147,10 @@
             // 
             // cbTenLop
             // 
-            this.cbTenLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTenLop.FormattingEnabled = true;
-            this.cbTenLop.Location = new System.Drawing.Point(22, 109);
+            this.cbTenLop.Location = new System.Drawing.Point(22, 105);
             this.cbTenLop.Name = "cbTenLop";
-            this.cbTenLop.Size = new System.Drawing.Size(129, 32);
+            this.cbTenLop.Size = new System.Drawing.Size(121, 21);
             this.cbTenLop.TabIndex = 8;
             // 
             // DanhSachHocSinh
