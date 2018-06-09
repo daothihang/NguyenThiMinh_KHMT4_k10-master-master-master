@@ -36,18 +36,24 @@ namespace DAL
 
         public void them(String malop,String mamon,String macbgv,String ngaypc)
         {
+            try
+            {
+                KetNoiCoSoDuLieu.MoKetNoi();
+                String sqlthem = "INSERT INTO PhanCongGiangDay VALUES(@malop,@mamon,@Macbgv,@ngaypc)";
+                SqlCommand cmd = new SqlCommand(sqlthem, KetNoiCoSoDuLieu.KetNoi);
 
-            KetNoiCoSoDuLieu.MoKetNoi();
-            String sqlthem = "INSERT INTO PhanCongGiangDay VALUES(@malop,@mamon,@Macbgv,@ngaypc)";
-            SqlCommand cmd = new SqlCommand(sqlthem, KetNoiCoSoDuLieu.KetNoi);
+                cmd.Parameters.AddWithValue("malop", malop);
+                cmd.Parameters.AddWithValue("mamon", mamon);
+                cmd.Parameters.AddWithValue("Macbgv", macbgv);
+                cmd.Parameters.AddWithValue("ngaypc", ngaypc);
 
-            cmd.Parameters.AddWithValue("malop", malop);
-            cmd.Parameters.AddWithValue("mamon", mamon);
-            cmd.Parameters.AddWithValue("Macbgv", macbgv);
-            cmd.Parameters.AddWithValue("ngaypc", ngaypc);
-
-            cmd.ExecuteNonQuery();
-            KetNoiCoSoDuLieu.DongKetNoi();
+                cmd.ExecuteNonQuery();
+                KetNoiCoSoDuLieu.DongKetNoi();
+            }
+            catch (Exception)
+            {
+               
+            }
         }
 
         public void sua(PhanCongGiangDayDTO dto)
@@ -114,7 +120,7 @@ namespace DAL
         {
             DataTable dt = new DataTable();
             KetNoiCoSoDuLieu.MoKetNoi();
-            String sqlFind3 = string.Format("select DISTINCT Lop.MaLop, Lop.TenLop, MonHoc.MaMon, MonHoc.TenMon from PhanCongGiangDay inner join CanBoGiaoVien on PhanCongGiangDay.MaCanBoGiaoVien= CanBoGiaoVien.MaCanBoGiaoVien inner join MonHoc on PhanCongGiangDay.MaMon= MonHoc.MaMon inner join Lop on PhanCongGiangDay.MaLop= Lop.MaLop  where TaiKhoan like'" + TaiKhoan + "%'");
+            String sqlFind3 = string.Format("select DISTINCT Lop.MaLop, MonHoc.MaMon, Lop.TenLop, MonHoc.TenMon from PhanCongGiangDay inner join CanBoGiaoVien on PhanCongGiangDay.MaCanBoGiaoVien= CanBoGiaoVien.MaCanBoGiaoVien inner join MonHoc on PhanCongGiangDay.MaMon= MonHoc.MaMon inner join Lop on PhanCongGiangDay.MaLop= Lop.MaLop  where TaiKhoan like'" + TaiKhoan + "%' order by MaLop, MaMon");
             SqlDataAdapter da = new SqlDataAdapter(sqlFind3, KetNoiCoSoDuLieu.KetNoi);
             da.Fill(dt);
             KetNoiCoSoDuLieu.DongKetNoi();

@@ -21,7 +21,14 @@ namespace BUL
 
         public void phanCong(String malop, String mamon, String macbgv, String ngaypc)
         {
-            myPhanCongDAL.them(malop,mamon,macbgv,ngaypc);
+            try
+            {
+                myPhanCongDAL.them(malop, mamon, macbgv, ngaypc);
+            }
+            catch (Exception)
+            {
+
+            }
 
         }
         public void sua(PhanCongGiangDayDTO dto)

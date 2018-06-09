@@ -26,7 +26,7 @@ namespace NguyenThiMinh_KHMT4_k10
         private void PhanCongGiangDay_Load(object sender, EventArgs e)
         {
             hienthi();
-
+            string.Format("{0:dd/MM/yyyy}", datephancong.Value);
            
 
         }
@@ -66,32 +66,68 @@ namespace NguyenThiMinh_KHMT4_k10
             if (cblop.SelectedIndex != -1 && cbgv.SelectedIndex != -1 && cbmon.SelectedIndex != -1)
             {
                 int dem = 0;
+                int dk = 0;
                 string lop = cblop.SelectedValue.ToString();
                 string mon = cbmon.SelectedValue.ToString();
+                string macb = cbgv.SelectedValue.ToString();
+                string ngaypc = string.Format("{0:dd/MM/yyyy}", datephancong.Value).ToString();
                 for (int i = 0; i < dgv.RowCount; i++)
                 {
                     string lopm = dgv.Rows[i].Cells["MaLop"].Value.ToString();
                     string monm = dgv.Rows[i].Cells["MaMon"].Value.ToString();
-                    if (lop==lopm && mon==monm)
+                    string macbm = dgv.Rows[i].Cells["MaCanBoGiaoVien"].Value.ToString();
+                    string ngaypcm = dgv.Rows[i].Cells["NgayPhanCong"].Value.ToString();
+                    if (ngaypc == ngaypcm)
                     {
                         dem++;
                     }
+                    if (mon == monm && lop == lopm)
+                    {
+                        dk++;
+                    }
+                  
+                    //else if (lop == lopm && mon == monm && macb == macbm && ngaypc == ngaypcm)
+                    //{
+                    //    dk++;
+                    //}
+                    //else if(macb==macbm && mon !=monm)
+                    //{
+                    //    dkgv++;
+                    //}
                     else
                     {
 
-
                     }
+                  
                 }
-                if (dem == 0)
-                {
-                    myPhanCong.phanCong((String)cblop.SelectedValue, (String)cbmon.SelectedValue, (String)cbgv.SelectedValue, datephancong.Text);
-                    MessageBox.Show("Phân công thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    hienthi();
+                
+                    try
+                    {
+                    if (dem == 0 )
+                    {
+                        myPhanCong.phanCong((String)cblop.SelectedValue, (String)cbmon.SelectedValue, (String)cbgv.SelectedValue, ngaypc);
+                        MessageBox.Show("Phân công thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        hienthi();
+                    }
+                    else if (dem != 0)
+                    {
+                        MessageBox.Show("Phân Công không thành công do " + ngaypc.ToString() + " lớp " + cblop.Text.ToString() + " đã được phân công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    //else if (dk != 0)
+                    //{
+                    //    MessageBox.Show("Phân Công không thành công do môn " + cbmon.Text.ToString() + " lớp " + cblop.Text.ToString() + " đã được phân công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //}
                 }
-                else
-                {
-                    MessageBox.Show("Phân công không thành công, lỗi do trùng dữ liệu hoặc do lịch giảng dạy này đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    catch (Exception)
+                    {
+                        
+                      
+                        MessageBox.Show("Phân công không thành công, lỗi do trùng dữ liệu hoặc do lịch giảng dạy này đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        
                 }
+                
+     
+                
 
               
              
@@ -224,6 +260,11 @@ namespace NguyenThiMinh_KHMT4_k10
         {
             XemPhanCong xem = new XemPhanCong();
             xem.Show();
+        }
+
+        private void datephancong_ValueChanged(object sender, EventArgs e)
+        {
+            string xau = string.Format("{0:dd/MM/yyyy}", datephancong.Value);
         }
     }
 }
