@@ -168,6 +168,12 @@
     <Compile Include="XemHoSoHocSinh.Designer.cs">
       <DependentUpon>XemHoSoHocSinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="XemPhanCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemPhanCong.Designer.cs">
+      <DependentUpon>XemPhanCong.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DanhSachGiaoVien.resx">
       <DependentUpon>DanhSachGiaoVien.cs</DependentUpon>
     </EmbeddedResource>
@@ -238,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="XemHoSoHocSinh.resx">
       <DependentUpon>XemHoSoHocSinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemPhanCong.resx">
+      <DependentUpon>XemPhanCong.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

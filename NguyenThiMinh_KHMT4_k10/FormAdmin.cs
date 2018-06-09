@@ -132,5 +132,11 @@ namespace NguyenThiMinh_KHMT4_k10
             XemCanBoGV cbgv = new XemCanBoGV();
             cbgv.Show();
         }
+
+        private void xemPhânCôngGiảngDậyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            XemPhanCong xem = new XemPhanCong();
+            xem.Show();
+        }
     }
 }
