@@ -270,11 +270,11 @@
             // 
             // dgvLop
             // 
-            this.dgvLop.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvLop.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dgvLop.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLop.Location = new System.Drawing.Point(181, 167);
+            this.dgvLop.Location = new System.Drawing.Point(180, 145);
             this.dgvLop.Name = "dgvLop";
-            this.dgvLop.Size = new System.Drawing.Size(553, 214);
+            this.dgvLop.Size = new System.Drawing.Size(554, 236);
             this.dgvLop.TabIndex = 4;
             // 
             // Lop
