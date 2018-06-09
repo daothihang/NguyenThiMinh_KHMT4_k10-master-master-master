@@ -36,7 +36,7 @@ namespace NguyenThiMinh_KHMT4_k10
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            //tnThem.Enabled = false;
+            btnThem.Enabled = false;
             btnSua.Enabled = true;
             btnXem.Enabled = true;
             btnXoa.Enabled = true;

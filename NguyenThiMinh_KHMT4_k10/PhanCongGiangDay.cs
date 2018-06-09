@@ -55,7 +55,7 @@ namespace NguyenThiMinh_KHMT4_k10
 
         private void btnthoat_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             FormAdmin ad = new FormAdmin();
             ad.Show();
         }
@@ -152,7 +152,7 @@ namespace NguyenThiMinh_KHMT4_k10
 
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             HeThong ht = new HeThong();
             ht.Show();
         }
@@ -218,6 +218,12 @@ namespace NguyenThiMinh_KHMT4_k10
              PhanCongGiangDayDTO dto = new PhanCongGiangDayDTO((String)cblop.SelectedValue, (String)cbmon.SelectedValue, (String)cbgv.SelectedValue, datephancong.Text);
              myPhanCong.xoaPC(dto);
              hienthi();
+        }
+
+        private void xemPhânCôngGiảngDậyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            XemPhanCong xem = new XemPhanCong();
+            xem.Show();
         }
     }
 }

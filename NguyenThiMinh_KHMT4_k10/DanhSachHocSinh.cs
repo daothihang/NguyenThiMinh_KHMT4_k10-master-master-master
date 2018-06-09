@@ -75,8 +75,8 @@ namespace NguyenThiMinh_KHMT4_k10
       
         private void printDocument_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            Bitmap bmp = new Bitmap(this.dgvDanhSachHocSinh.Width,this.dgvDanhSachHocSinh.Height);
-            dgvDanhSachHocSinh.DrawToBitmap(bmp, new Rectangle(0, 0, dgvDanhSachHocSinh.Width, dgvDanhSachHocSinh.Height));
+            Bitmap bmp = new Bitmap(this.dgvDanhSachHocSinh.Width,this.dgvDanhSachHocSinh.Height*2);
+            dgvDanhSachHocSinh.DrawToBitmap(bmp, new Rectangle(0, 0, dgvDanhSachHocSinh.Width, dgvDanhSachHocSinh.Height*2));
             e.Graphics.DrawImage(bmp,50,200);
             e.Graphics.DrawString("Danh sách học sinh", new Font("Arial", 30, FontStyle.Bold), Brushes.Black, new Point(230, 100));
             
