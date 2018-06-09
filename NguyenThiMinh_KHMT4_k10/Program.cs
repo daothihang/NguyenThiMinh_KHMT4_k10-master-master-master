@@ -16,7 +16,7 @@ namespace NguyenThiMinh_KHMT4_k10
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QuanLyMonHoc());
+            Application.Run(new HeThong());
         }
     }
 }

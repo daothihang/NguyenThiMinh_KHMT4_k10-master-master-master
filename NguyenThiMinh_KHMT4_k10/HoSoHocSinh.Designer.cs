@@ -176,21 +176,21 @@
             this.txtDiemVT.Location = new System.Drawing.Point(498, 26);
             this.txtDiemVT.Name = "txtDiemVT";
             this.txtDiemVT.Size = new System.Drawing.Size(178, 20);
-            this.txtDiemVT.TabIndex = 5;
+            this.txtDiemVT.TabIndex = 4;
             // 
             // txtTenBM
             // 
             this.txtTenBM.Location = new System.Drawing.Point(498, 77);
             this.txtTenBM.Name = "txtTenBM";
             this.txtTenBM.Size = new System.Drawing.Size(178, 20);
-            this.txtTenBM.TabIndex = 6;
+            this.txtTenBM.TabIndex = 5;
             // 
             // txtSDT
             // 
             this.txtSDT.Location = new System.Drawing.Point(498, 129);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(178, 20);
-            this.txtSDT.TabIndex = 7;
+            this.txtSDT.TabIndex = 6;
             // 
             // cboGT
             // 
@@ -210,7 +210,7 @@
             this.cboMaLop.Location = new System.Drawing.Point(498, 175);
             this.cboMaLop.Name = "cboMaLop";
             this.cboMaLop.Size = new System.Drawing.Size(178, 21);
-            this.cboMaLop.TabIndex = 8;
+            this.cboMaLop.TabIndex = 7;
             this.cboMaLop.SelectedIndexChanged += new System.EventHandler(this.cboMaLop_SelectedIndexChanged);
             // 
             // dgvHSHS
