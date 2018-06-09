@@ -384,7 +384,7 @@
             this.btnxem.Name = "btnxem";
             this.btnxem.Size = new System.Drawing.Size(116, 29);
             this.btnxem.TabIndex = 6;
-            this.btnxem.Text = "Xem Phân Công";
+            this.btnxem.Text = "Lịch Phân Công";
             this.btnxem.UseVisualStyleBackColor = false;
             this.btnxem.Click += new System.EventHandler(this.btnxem_Click);
             // 

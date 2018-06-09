@@ -42,7 +42,7 @@ namespace NguyenThiMinh_KHMT4_k10
 
         private void toolStripMenuItem19_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
             PhanCongGiangDay phanCong = new PhanCongGiangDay();
             phanCong.Show();
         }
@@ -135,8 +135,14 @@ namespace NguyenThiMinh_KHMT4_k10
 
         private void xemPhânCôngGiảngDậyToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             XemPhanCong xem = new XemPhanCong();
             xem.Show();
+        }
+
+        private void toolStripMenuItem18_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
