@@ -245,7 +245,7 @@
             this.cblop.Location = new System.Drawing.Point(285, 100);
             this.cblop.Name = "cblop";
             this.cblop.Size = new System.Drawing.Size(121, 21);
-            this.cblop.TabIndex = 5;
+            this.cblop.TabIndex = 0;
             // 
             // lbtenlop
             // 
@@ -273,7 +273,7 @@
             this.cbmon.Location = new System.Drawing.Point(285, 149);
             this.cbmon.Name = "cbmon";
             this.cbmon.Size = new System.Drawing.Size(121, 21);
-            this.cbmon.TabIndex = 9;
+            this.cbmon.TabIndex = 1;
             // 
             // lbtengv
             // 
@@ -291,7 +291,7 @@
             this.cbgv.Location = new System.Drawing.Point(285, 200);
             this.cbgv.Name = "cbgv";
             this.cbgv.Size = new System.Drawing.Size(121, 21);
-            this.cbgv.TabIndex = 11;
+            this.cbgv.TabIndex = 2;
             // 
             // btnxem
             // 
@@ -306,7 +306,7 @@
             this.btnxem.Location = new System.Drawing.Point(513, 92);
             this.btnxem.Name = "btnxem";
             this.btnxem.Size = new System.Drawing.Size(116, 29);
-            this.btnxem.TabIndex = 12;
+            this.btnxem.TabIndex = 3;
             this.btnxem.Text = "Xem Phân Công";
             this.btnxem.UseVisualStyleBackColor = false;
             this.btnxem.Click += new System.EventHandler(this.btnxem_Click);
@@ -323,7 +323,7 @@
             this.button1.Location = new System.Drawing.Point(513, 141);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 29);
-            this.button1.TabIndex = 13;
+            this.button1.TabIndex = 4;
             this.button1.Text = "Hủy";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -340,7 +340,7 @@
             this.btnthoat.Location = new System.Drawing.Point(513, 192);
             this.btnthoat.Name = "btnthoat";
             this.btnthoat.Size = new System.Drawing.Size(116, 29);
-            this.btnthoat.TabIndex = 14;
+            this.btnthoat.TabIndex = 5;
             this.btnthoat.Text = "Thoát";
             this.btnthoat.UseVisualStyleBackColor = false;
             this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
